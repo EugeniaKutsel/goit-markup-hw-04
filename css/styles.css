@@ -15,6 +15,8 @@
   --hero-footer-background-color: #2f303a;
   --logo-color: #000000;
   --foot-text-color: rgba(255, 255, 255, 0.6);
+  --features-icon-box: #f5f4fa;
+  --clients-border-box: #afb1b8;
 }
 html {
   box-sizing: border-box;
@@ -134,6 +136,9 @@ header {
 .contacts .link.current {
   color: var(--accent-color);
 }
+.contacts-list.icon {
+  margin-right: 10px;
+}
 /* Hero */
 .hero {
   background-color: var(--hero-footer-background-color);
@@ -165,6 +170,17 @@ header {
 .features-list .item:last-child {
   margin-right: 0;
 }
+.features-list.icon-box {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+
+  background-color: var(--features-icon-box);
+}
 .features-list .title {
   font-size: 14px;
   line-height: 1.14;
@@ -195,6 +211,15 @@ header {
 }
 .section.hero {
   padding: 200px 0;
+  height: 600px;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .section.work {
   padding-top: 0;
@@ -242,6 +267,21 @@ header {
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+/* Clients */
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.clients-list .item {
+  margin-right: 30px;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--clients-border-box);
+  border-radius: 4px;
+}
+.clients-list .item:last-child {
+  margin-right: 0;
 }
 /* Portfolio */
 .button-list {
